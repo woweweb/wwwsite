@@ -142,16 +142,16 @@ hr {
   padding: 10px 30px;
 }
 
-ul {
+.plans-list {
   list-style-type: none;
   padding-left: 20px;
 }
 
-li {
+.plans-list li {
   text-align: left;
 }
 
-li.row {
+.plans-list li.row {
   margin: 0;
 }
 
