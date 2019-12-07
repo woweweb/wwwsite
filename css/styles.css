@@ -162,6 +162,15 @@ hr {
   color: rgb(81, 159, 191);
 }
 
+#enterprisePlanDesc {
+  width: 100%;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
 #basic-title,
 #business-title,
 #premium-title,
