@@ -138,6 +138,12 @@ h4 {
   padding: 20px 30px;
 }
 
+#basicPlanButton {
+  border-color: rgb(49, 49, 49);
+  color: rgb(49, 49, 49);
+  background-color: white;
+}
+
 #basicPlanCollapse,
 #premiumPlanCollapse,
 #businessPlanCollapse,
