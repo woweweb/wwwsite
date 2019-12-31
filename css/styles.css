@@ -138,6 +138,14 @@ h4 {
   padding: 20px 30px;
 }
 
+#collapseExample {
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  font-size: 12px;
+  text-align: justify;
+}
+
 hr {
   padding: 10px 30px;
 }
