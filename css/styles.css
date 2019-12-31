@@ -138,7 +138,8 @@ h4 {
   padding: 20px 30px;
 }
 
-#collapseExample {
+#basicPlanCollapse,
+#premiumPlanCollapse {
   width: 100%;
   padding: 10px;
   height: 150px;
