@@ -138,10 +138,56 @@ h4 {
   padding: 20px 30px;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 #basicPlanButton {
   border-color: rgb(49, 49, 49);
   color: rgb(49, 49, 49);
   background-color: white;
+}
+
+#basicPlanButton:hover {
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
+#premiumPlanButton {
+  background-color: white;
+  border-color: rgb(220, 202, 118);
+  color: rgb(220, 202, 118);
+}
+
+#premiumPlanButton:hover {
+  background-color: rgb(220, 202, 118);
+  border-color: rgb(49, 49, 49);
+  color: rgb(49, 49, 49);
+}
+
+#businessPlanButton {
+  background-color: white;
+  border-color: rgb(200, 104, 202);
+  color: rgb(200, 104, 202);
+}
+
+#businessPlanButton:hover {
+  background-color: rgb(200, 104, 202);
+  border-color: rgb(49, 49, 49);
+  color: rgb(49, 49, 49);
+}
+
+#enterprisePlanButton {
+  background-color: white;
+  border-color: rgb(99, 158, 188);
+  color: rgb(99, 158, 188);
+}
+
+#enterprisePlanButton:hover {
+  background-color: rgb(99, 158, 188);
+  border-color: rgb(49, 49, 49);
+  color: rgb(49, 49, 49);
+  /* color: white; */
 }
 
 #basicPlanCollapse,
