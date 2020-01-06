@@ -23,193 +23,287 @@
 </head>
 
 <body>
-  <section id="hero">
-    <nav class="navbar transparent">
+  <div class="container">
+    <section id="hero">
+      <nav class="navbar transparent">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <img src="img/hamburger.svg" alt="" />
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav  navbar-right">
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="plans">
+      <div class=container>
+        <div class="row">
+          <div class="master-title">
+            <h1>Plans & Pricing</h1>
+            <p>Choose the plan that best fits your needs.</p>
+          </div>
+        </div>
+      </div>
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <img src="img/hamburger.svg" alt="" />
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.svg" alt="" />
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav  navbar-right">
-            <li><a href="index.html">Home</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </section>
-  <section class="plans">
-    <div class=container>
-      <div class="row">
-        <div class="master-title">
-          <h1>Plans & Pricing</h1>
-          <p>Choose the plan that best fits your needs.</p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-header">
-              <h4 id="basic-title">Basic</h4>
-              <p>Our basic service still comes with the fast delivery and designed to impress your clients.</p>
-            </div>
-            <hr>
-            <h3>$1000</h3>
-            <div class="row">
-              <div class="col-sm-12">
-                <ul>
-                  <li class="row">
-                    <span class="span-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Front End/UI Design</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark no-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Back End/Database</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark no-checkmark">&#10003;</span>
-                    <span class="span-planBullet no-checkmark">Login functionality</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark no-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Payment system</span>
-                  </li>
-                </ul>
+        <div class="row">
+
+          <!-- BASIC PLAN CARD -->
+
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">
+                <h4 id="basic-title">Basic</h4>
+                <p>Our basic service still comes with the fast delivery and designed to impress your clients.</p>
               </div>
+              <hr>
+              <h3 class="price-font">$1000</h3>
               <div class="row">
-                <div class="col-md-12">
-                  <p>
-                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample"
-                      aria-expanded="false" aria-controls="collapseExample">
-                      Learn more
-                    </button>
-                  </p>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body" style="height: 150px">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                      Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    </div>
-                  </div>
+                <div class="col-sm-12">
+                  <ul class="plans-list">
+                    <li class="row">
+                      <span class="span-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Front End/UI Design</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark no-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Back End/Database</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark no-checkmark">&#10003;</span>
+                      <span class="span-planBullet no-checkmark">Login functionality</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark no-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Payment system</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- <div class="col-md-12"> -->
+                <p>
+                  <button class="btn btn-info" id="basicPlanButton" type="button" data-toggle="collapse"
+                    data-target="#basicPlanCollapse" aria-expanded="false" aria-controls="basicPlanCollapse">
+                    Learn more
+                  </button>
+                </p>
+
+                <!-- </div> -->
+
+              </div>
+              <div class="collapse" id="basicPlanCollapse">
+                <!-- <div class="card card-body" style="height: 150px"> -->
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident.
+                <!-- </div> -->
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- PREMIUM PLAN CARD -->
+
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">
+                <h4 id="premium-title">Premium</h4>
+                <p>A website with a great value for the price. Enhanced functionality with a remarkable user interface.
+                </p>
+              </div>
+
+              <hr>
+              <h3 class="price-font">$3000</h3>
+              <div class="row">
+                <div class="col-sm-12">
+                  <ul class="plans-list">
+                    <li class="row">
+                      <span class="span-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Front End/UI Design</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Back End/Database</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark no-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Login functionality</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark no-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Payment system</span>
+                    </li>
+                  </ul>
                 </div>
 
               </div>
+
+              <div class="row">
+                <!-- <div class="col-md-12"> -->
+                <p>
+                  <button class="btn btn-info" id="premiumPlanButton" type="button" data-toggle="collapse"
+                    data-target="#premiumPlanCollapse" aria-expanded="false" aria-controls="premiumPlanCollapse">
+                    Learn more
+                  </button>
+                </p>
+
+                <!-- </div> -->
+
+              </div>
+              <div class="collapse" id="premiumPlanCollapse">
+                <!-- <div class="card card-body" style="height: 150px"> -->
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident.
+                <!-- </div> -->
+              </div>
+
+
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-header">
-              <h4 id="premium-title">Premium</h4>
-              <p>A website with a great value for the price. Enhanced functionality with a remarkable user interface.
-              </p>
-            </div>
 
-            <hr>
-            <h3>$3000</h3>
-            <div class="row">
-              <div class="col-sm-12">
-                <ul>
-                  <li class="row">
-                    <span class="span-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Front End/UI Design</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Back End/Database</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark no-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Login functionality</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark no-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Payment system</span>
-                  </li>
-                </ul>
+          <!-- BUSINESS PLAN CARD -->
+
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">
+                <h4 id="business-title">Business</h4>
+                <p>Everything that business would need and many more other features to help your business grow.</p>
+              </div>
+
+              <hr>
+              <h3 class="price-font">$5000</h3>
+              <div class="row">
+                <div class="col-sm-12">
+                  <ul class="plans-list">
+                    <li class="row">
+                      <span class="span-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Front End/UI Design</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Back End/Database</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Login functionality</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark no-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Payment system</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- <div class="col-md-12"> -->
+                <p>
+                  <button class="btn btn-info" id="businessPlanButton" type="button" data-toggle="collapse"
+                    data-target="#businessPlanCollapse" aria-expanded="false" aria-controls="businessPlanCollapse">
+                    Learn more
+                  </button>
+                </p>
+
+                <!-- </div> -->
+
+              </div>
+              <div class="collapse" id="businessPlanCollapse">
+                <!-- <div class="card card-body" style="height: 150px"> -->
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident.
+                <!-- </div> -->
               </div>
 
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-header">
-              <h4 id="business-title">Business</h4>
-              <p>Everything that business would need and many more other features to help your business grow.</p>
-            </div>
 
-            <hr>
-            <h3>$5000</h3>
-            <div class="row">
-              <div class="col-sm-12">
-                <ul>
-                  <li class="row">
-                    <span class="span-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Front End/UI Design</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Back End/Database</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Login functionality</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark no-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Payment system</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-header">
-              <h4 id="enterprise-title">Enterprise</h4>
-              <p>The best possible experience targeting your clients' satisfaction and delivering all that is needed to
-                connect your business with wider niche.</p>
-            </div>
+          <!-- ENTERPRISE PLAN CARD -->
 
-            <hr>
-            <h3>$10000</h3>
-            <div class="row">
-              <div class="col-sm-12">
-                <ul>
-                  <li class="row">
-                    <span class="span-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Front End/UI Design</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Back End/Database</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Login functionality</span>
-                  </li>
-                  <li class="row">
-                    <span class="span-checkmark">&#10003;</span>
-                    <span class="span-planBullet">Payment system</span>
-                  </li>
-                </ul>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-header">
+                <h4 id="enterprise-title">Enterprise</h4>
+                <p>The best possible experience targeting your clients' satisfaction and delivering all that is needed
+                  to
+                  connect your business with wider niche.</p>
               </div>
+
+              <hr>
+              <h3 class="price-font">$10000</h3>
+              <div class="row">
+                <div class="col-sm-12">
+                  <ul class="plans-list">
+                    <li class="row">
+                      <span class="span-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Front End/UI Design</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Back End/Database</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Login functionality</span>
+                    </li>
+                    <li class="row">
+                      <span class="span-checkmark">&#10003;</span>
+                      <span class="span-planBullet">Payment system</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- <div class="col-md-12"> -->
+                <p>
+                  <button class="btn btn-info" id="enterprisePlanButton" type="button" data-toggle="collapse"
+                    data-target="#enterprisePlanCollapse" aria-expanded="false" aria-controls="enterprisePlanCollapse">
+                    Learn more
+                  </button>
+                </p>
+
+                <!-- </div> -->
+
+              </div>
+              <div class="collapse" id="enterprisePlanCollapse">
+                <!-- <div class="card card-body" style="height: 150px"> -->
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident.
+                <!-- </div> -->
+              </div>
+
+              <!-- <button class="btn btn-info" onclick="myFunction()">Learn More</button>
+              <div id="enterprisePlanDesc" style="display: none;">
+                This is the text about this plan. Will be added to the final project. This is just a test.
+                This is the text about this plan. Will be added to the final project. This is just a test.
+                This is the text about this plan. Will be added to the final project. This is just a test.
+                This is the text about this plan. Will be added to the final project. This is just a test.
+              </div> -->
             </div>
           </div>
         </div>
       </div>
-  </section>
-  <footer>
-    <p>Prices are subject to change based on complexity of the design!</p>
-  </footer>
+    </section>
+    <footer>&copy; Copyright 2019 woweweb</footer>
+
+  </div>
+
+  <!-- include our local js file and the functions inside -->
+  <script src="functions.js"></script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
